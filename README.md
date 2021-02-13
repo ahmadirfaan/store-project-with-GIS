@@ -7,8 +7,14 @@
 ​	Proyek ini merupakan pembuatan REST API dengan meng-analogikan sebuah toko yang dapat menyimpan data barang (*item*), stok barang (*stock*), satuan barang(*unit*), transaksi(*transaction*), dan lokasi toko(*store location*).  Dengan mendapatkan koordinat user API akan mengembalikan jarak lokasi antara user dan lokasi toko terdekat. Untuk dapat menjalankan proyek ini diperlukan : 
 
 - Spring Boot dengan Java 11
+
 - PostgreSQL dengan ekstensi PostGIS untuk mengeksekusi data spasial (lokasi toko)
+
 - Maven
+
+- Pembuatan database SubCounty dan Store_Location di PostgreSQL, yaitu pada aplikasi QGIS lakukan export *shapefile* ke *database* dan pilih PostgreSQL sehingga data-data lokasi titik dan area (subcounty) akan otomatis berubah menjadi database di PostgreSQL dengan tipe data *Point* dan *Multipoint*. Setelah merubah data tersebut dapat dilakukan fungsi-fungsi eksekusi query pada database.
+
+  
 
 
 
